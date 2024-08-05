@@ -20,8 +20,8 @@ jobs:
     - name: Install dependencies
       run: swift package resolve
     - name: Build
-      run: xcodebuild -scheme SideMenuExample -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.0' build
+      run: xcodebuild -scheme SideMenuExample -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.0' build -allowProvisioningUpdates
     - name: Run tests
-      run: xcodebuild test -scheme SideMenuExampleTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.0'
+      run: xcodebuild test -scheme SideMenuExampleTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.0' -allowProvisioningUpdates
     - name: Run UI Tests
-      run: xcodebuild test -scheme SideMenuExampleUITests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.0'
+      run: xcodebuild test -scheme SideMenuExampleUITests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=15.0' -allowProvisioningUpdates
