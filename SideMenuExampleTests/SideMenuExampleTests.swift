@@ -1,6 +1,6 @@
 //
-//  SideMenu_ExTests.swift
-//  SideMenu_ExTests
+//  SideMenuExampleTests.swift
+//  SideMenuExampleTests
 //
 //  Created by Derson Productions, LLC on 2024-AUG-03.
 //
@@ -31,9 +31,9 @@
 //  SOFTWARE.
 
 import XCTest
-@testable import SideMenu_Ex
+@testable import SideMenuExample
 
-final class SideMenu_ExTests: XCTestCase {
+final class SideMenuExampleTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

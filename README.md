@@ -7,7 +7,7 @@ I ran this application with the following,
 
 - [MacOS - Sonoma 14.6](https://developer.apple.com/documentation/macos-release-notes/macos-14_6-release-notes)
 - [xCode - Version 15.4 (15F31d)](https://developer.apple.com/news/releases/?id=05132024a)
-- Minimum Deployment set to iOS version 17.5
+- Minimum Deployment set to [iOS version 17.5](https://developer.apple.com/documentation/ios-ipados-release-notes/ios-ipados-17_5-release-notes)
 
 Once compiled, the application should present the Home View Controller as seen below with the hidden menu in the upper left of the screen.
 
@@ -17,4 +17,4 @@ Clicking the three lines in the upper left will cause the menu to slide in from 
 
 ![alt text](docs/img/Menu_View.png)
 
-# [License](https://github.com/DersonProductions/iOS_SideMenu_Example/blob/main/LICENSE)
+# [MIT License](https://github.com/DersonProductions/iOS_SideMenu_Example/blob/main/LICENSE) with one small change.
