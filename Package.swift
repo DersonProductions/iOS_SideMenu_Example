@@ -18,12 +18,12 @@ let package = Package(
         .target(
             name: "iOS_SideMenu_Example",
             dependencies: [],
-            path: "Sources"
+            path: "Sources/iOS_SideMenu_Example"
         ),
         .testTarget(
             name: "iOS_SideMenu_ExampleTests",
             dependencies: ["iOS_SideMenu_Example"],
-            path: "Tests"
+            path: "Tests/iOS_SideMenu_ExampleTests"
         ),
     ]
 )
