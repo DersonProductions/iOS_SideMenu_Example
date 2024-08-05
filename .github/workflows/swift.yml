@@ -13,6 +13,7 @@ jobs:
     env:
       XCODE_VERSION: 15.4.0
       IOS_VERSION: 17.5
+      PHONE_NAME: 'iPhone 14'
     steps:
     - uses: actions/checkout@v4
     - name: Set up Xcode
@@ -22,8 +23,8 @@ jobs:
     - name: Install dependencies
       run: swift package resolve
     - name: Build
-      run: xcodebuild -scheme SideMenuExample -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=${{env.IOS_VERSION}}' build -allowProvisioningUpdates
+      run: xcodebuild -scheme SideMenuExample -sdk iphonesimulator -destination 'platform=iOS Simulator,name=${{env.PHONE_NAME}},OS=${{env.IOS_VERSION}}' build -allowProvisioningUpdates
     - name: Run tests
-      run: xcodebuild test -scheme SideMenuExampleTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=${{env.IOS_VERSION}}' -allowProvisioningUpdates
+      run: xcodebuild test -scheme SideMenuExampleTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=${{env.PHONE_NAME}},OS=${{env.IOS_VERSION}}' -allowProvisioningUpdates
     - name: Run UI Tests
-      run: xcodebuild test -scheme SideMenuExampleUITests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13,OS=${{env.IOS_VERSION}}' -allowProvisioningUpdates
+      run: xcodebuild test -scheme SideMenuExampleUITests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=${{env.PHONE_NAME}},OS=${{env.IOS_VERSION}}' -allowProvisioningUpdates
