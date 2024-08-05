@@ -25,6 +25,9 @@ let package = Package(
             ],
             resources: [
                 .process("Assets.xcassets")
+            ],
+            swiftSettings: [
+                .define("PLATFORM_IOS")
             ]
         ),
         .testTarget(
