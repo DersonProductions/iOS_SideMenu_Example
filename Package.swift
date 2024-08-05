@@ -20,9 +20,11 @@ let package = Package(
             name: "iOS_SideMenu_Example",
             dependencies: [],
             path: "SideMenuExample",
+            exclude: [
+                "Info.plist"
+            ],
             resources: [
-                .process("Assets.xcassets"),
-                .process("Info.plist")
+                .process("Assets.xcassets")
             ]
         ),
         .testTarget(
