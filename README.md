@@ -16,3 +16,5 @@ Once compiled, the application should present the Home View Controller as seen b
 Clicking the three lines in the upper left will cause the menu to slide in from the left. The menu will be populated with a few different options and selecting any of the options will cause the automation to present the given view through the UI.
 
 ![alt text](docs/img/Menu_View.png)
+
+# [License](https://github.com/DersonProductions/iOS_SideMenu_Example/blob/main/LICENSE)
