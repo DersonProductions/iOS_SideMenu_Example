@@ -3,6 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "iOS_SideMenu_Example",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v16)
     ],
@@ -18,7 +19,11 @@ let package = Package(
         .target(
             name: "iOS_SideMenu_Example",
             dependencies: [],
-            path: "SideMenuExample"
+            path: "SideMenuExample",
+            resources: [
+                .process("Assets.xcassets"),
+                .process("Info.plist")
+            ]
         ),
         .testTarget(
             name: "iOS_SideMenu_ExampleTests",
